@@ -1,0 +1,92 @@
+body{
+    background-image: url(Contact\ back.png);
+    background-position: center;
+    background-size: cover;
+    padding: 2px;
+    overflow: hidden;
+    width: 100%;
+    min-height: 97vh;
+}
+
+a{
+    color: lightslategray;
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(154, 143, 143, 0.8)50%, rgba(154,143,143,0.8)50%);
+    position: absolute;
+    top: 140px;
+    left: 600px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#contact{
+    padding: 0 10%;
+    margin-bottom: 50px;
+    height: 90vh;
+}
+
+#contact form{
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.8)50%, rgba(255, 255, 255, 0.8)50%);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.gauche-droite{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.gauche-droite .gauche , .gauche-droite .droite{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#contact form label{
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+#contact form input{
+    padding: 8px;
+    outline: 0;
+    border: 1px solid gray;
+}
+
+textarea{
+    height: 150px;
+    resize: none;
+    outline: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+#contact form input:focus, textarea:focus{
+    border: 1px solid cyan;
+}
+
+button{
+    margin-top: 30px;
+}
+#contact button{
+    width: fit-content;
+    padding: 8px 40px;
+    background-color: #ed1212;
+    border: 1px solid #ed1212;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#contact button:hover{
+    letter-spacing: 1px;
+}

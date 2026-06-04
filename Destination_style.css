@@ -1,0 +1,119 @@
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100px;
+    margin-left: 2px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+.login-btn{
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #ed1212, #ed1212);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+    margin-right: 50px;
+}
+
+.back{
+    background-image: url(JapanAir.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 2px;
+    overflow: hidden;
+    width: 100%;
+    min-height: 97vh;
+}
+#Recommended-destination{
+    padding: 0 10%;
+    margin-bottom: 50px;
+}
+
+#Recommended-destination .contenu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+#Recommended-destination .contenu .box{
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    transition: 0.5s;
+}
+
+#Recommended-destination .contenu .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box .contenu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+
+.box .contenu h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.box .conteu p{
+    padding: 20px;
+    font-size: 12px;
+}
+
+.box .contenu p:nth-child(3){
+    margin-bottom: 25px;
+}
+
+.box .contenu a{
+    margin-top: 60px;
+    padding: 10px 60px;
+    border: 2px solid rgb(0, 208, 255);
+    color: rgb(0, 208, 255);
+    font-weight: bold;
+}
+
+.box:hover{
+    box-shadow: 0 0 10px rgb(0, 208, 255);
+}
+
+.box:hover .contenu{
+    transform: translateX(0);
+}
